@@ -1,0 +1,448 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  
+    :root {
+      /* farver */
+      --lightgreen: #A5BCB1;
+      --darkgreen: #105C4C;
+      --black: #000000;
+      --white: #ffffff;
+  
+       /* fonte */
+       --menu: Rift soft, regular;
+    }
+  
+      html, body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        scroll-behavior: smooth;
+      }
+    
+      
+      h1{
+        font-family: basic-sans, sans-serif;
+        font-weight: 700;
+        font-size: 100px;
+      }
+      
+      h2{
+        font-family: basic-sans, sans-serif;
+        font-weight: 700;
+        font-size: 60px;
+        }
+    
+     h3{
+        font-family: basic-sans, sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+    h4{
+      font-family: basic-sans, sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+    }
+
+    h6{
+      font-family: basic-sans, sans-serif;
+      font-weight: 600;
+      font-size: 30px;
+      text-align: center;
+    }
+    
+    p{
+        font-family: basic-sans, sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    text {
+        font-family: basic-sans, sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+    }
+/* Baggrundsbillede med tekst */
+.forsidebillede{
+    position: relative;
+  }
+
+.overskrift {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+
+
+
+/* Chat */
+/* Knap til at åbne chatten, og holde den fixed */
+.open-button {
+  background-color: #105C4C;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 150px;
+  border-radius: 25px;
+}
+
+/* Popup chatten - skjult default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid white;
+  z-index: 9;
+  border-radius: 30px;
+}
+
+/* Styles til form-containeren */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 25px;
+}
+
+/* Tekstområde*/
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+  font-family: basic-sans, sans-serif;
+  border-radius: 25px;
+}
+
+/* Når tekstområdet aktiveres*/
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Style af send knappen */
+.form-container .btn {
+  background-color: #105C4C;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  font-family: basic-sans, sans-serif;
+  border-radius: 25px;
+}
+
+/* Style af annuller knappen */
+.form-container .cancel {
+  background-color: #A5BCB1;
+  font-family: basic-sans, sans-serif;
+  border-radius: 25px;
+}
+
+/* Hover effekt på alle knapperne*/
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+/*Mediarules*/
+  
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    .overskrift {
+        font-size: 30px;
+    }
+
+    .billederflex{
+        flex-direction: column;
+    }
+
+    .produktbillede{
+      width: 300px;
+      height: auto;
+    }
+
+    .produkter{
+      width: 300px;
+      height: 500px;
+    }
+
+    .billedernetilprodukt{
+      width: 300px;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .overskrift {
+        font-size: 30px;
+    }
+
+    .billederflex{
+        flex-direction: column;
+    }
+
+    .knap {
+        margin-left: 180px;
+    }
+
+    .produktbillede{
+      width: 300px;
+      height: auto;
+    }
+
+    .produkter{
+      width: 400px;
+      height: 500px;
+    }
+
+    .billedernetilprodukt{
+      width: 400px;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {  
+    .overskrift {
+        font-size: 60px;
+    }
+
+    .billederflex{
+        flex-direction: row;
+    }
+
+    h3 {
+        margin-top: 100px;
+    }
+
+    .knap {
+        margin-left: 300px;
+    }
+
+    .produktbillede{
+      width: 400px;
+      height: auto;
+    }
+
+    .produkter{
+      width: 400px;
+      height: 500px;
+    }
+
+    .billedernetilprodukt{
+      width: 400px;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+}
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .overskrift {
+        font-size: 80px;
+    }
+
+    .produktbillede{
+      width: 400px;
+      height: auto;
+    }
+
+    .produkter{
+      width: 400px;
+      height: 500px;
+    }
+
+    .billedernetilprodukt{
+      width: 400px;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+  }
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .overskrift {
+        font-size: 100px;
+    }
+
+    .produktbillede{
+      width: 400px;
+      height: auto;
+    }
+
+    .produkter{
+      width: 400px;
+      height: 500px;
+    }
+
+    .billedernetilprodukt{
+      width: 400px;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+  }
+  .ikonerne{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .rundeformer{
+    border: none;
+    display: flex;
+    background-color: #105C4C;
+    min-width: 170px;
+    height: 75px;
+    border-radius: 40px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .firstikon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex: 1 0 20%; /* explanation below */
+    margin-top: 50px;
+  }
+
+   p.hvideikoner{
+    font-size: 18px;
+    color: white;
+    align-items: center;
+  }
+
+  .ikon{
+    width: 62px;
+    border-radius: 30px;
+    height: auto;
+    margin-right: 5px;
+  }
+  .overprodukterne{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 150px;
+  }
+
+  .produktover{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+  }
+
+  .overskriften{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  .overskriftandre{
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .rundtpaller{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  .betraek{
+    width: 200px;
+  }
+
+  .halvpalle{
+    width: 300px;
+  }
+
+  .afstanden{
+    text-align: start;
+  
+  }
+
+  .ryglaenlille{
+    width: 300px;
+  }
+
+  .hjul{
+    width: 200px;
+    justify-content: center;
+  }
+
+  .lillebord{
+    width: 200px;
+  }
+
+  .storbord{
+    width: 220px;
+  }
+
+  .lyskaede{
+    width: 200px;
+  }
+
+  .handlys{
+    width: 100px;
+
+  }
+
+  .maate{
+    width: 250px;
+  }
+
+  .lillelanterne{
+    width: 150px;
+  }
+
+  .storlanterne{
+    width: 150px;
+  }
+
+  .lampe{
+    width: 200px;
+  }
+

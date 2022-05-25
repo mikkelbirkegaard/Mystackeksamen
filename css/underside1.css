@@ -1,0 +1,941 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  
+    :root {
+      /* farver */
+      --lightgreen: #A5BCB1;
+      --darkgreen: #105C4C;
+      --black: #000000;
+      --white: #ffffff;
+  
+       /* fonte */
+       --menu: Rift soft, regular;
+    }
+  
+    html, body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+      }
+    
+      
+      h1{
+        font-family: basic-sans, sans-serif;
+        font-weight: 700;
+        font-size: 100px;
+      }
+      
+      h2{
+        font-family: basic-sans, sans-serif;
+        font-weight: 700;
+        font-size: 60px;
+        }
+    
+     h3{
+        font-family: basic-sans, sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        }
+
+    h4{
+      font-family: basic-sans, sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+        }
+
+    h6{
+        font-family: basic-sans, sans-serif;
+        font-weight: 600;
+        font-size: 30px;
+        text-align: center;
+        }
+    
+    p{
+        font-family: basic-sans, sans-serif;
+        font-weight: 400;
+        }
+
+    text {
+        font-family: basic-sans, sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        }
+
+
+/* Chat */
+/* Knap til at åbne chatten, og holde den fixed */
+.open-button {
+    background-color: #105C4C;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 150px;
+    border-radius: 25px;
+    z-index: 100;
+  }
+  
+  /* Popup chatten - skjult default */
+  .chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid white;
+    z-index: 9;
+    border-radius: 30px;
+  }
+  
+  /* Styles til form-containeren */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 25px;
+  }
+  
+  /* Tekstområde*/
+  .form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+    font-family: basic-sans, sans-serif;
+    border-radius: 25px;
+  }
+  
+  /* Når tekstområdet aktiveres*/
+  .form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Style af send knappen */
+  .form-container .btn {
+    background-color: #105C4C;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+    font-family: basic-sans, sans-serif;
+    border-radius: 25px;
+  }
+  
+  /* Style af annuller knappen */
+  .form-container .cancel {
+    background-color: #A5BCB1;
+    font-family: basic-sans, sans-serif;
+    border-radius: 25px;
+  }
+  
+  /* Hover effekt på alle knapperne*/
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+
+/*Mediarules*/
+  
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+
+    .lillepalle{
+      width: 200px;
+      height: auto;
+    }
+
+    .loungemodul {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+
+  .farvebillede {
+  width: 40px;
+  border-radius: 30px;
+  
+    }
+
+.farvetekst {
+  align-items: center;
+  margin-left: 10px;
+}
+
+.krydsikon {
+  margin-left: 50px;
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+
+}
+
+.rundtomdethele{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rundtomteksten{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+
+}
+p.brodtekst{
+  font-size: 16px;
+}
+
+.dropdownknap{
+  justify-content: center;
+  align-items: center;
+}
+
+a.add-cart.cart1{
+  align-self: center;
+  margin-bottom: 50px;
+}
+
+
+
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+
+  .prev, .next,.text {font-size: 11px; color: #000000;}
+
+  .lillepalle{
+    width: 320px;
+    height: auto;
+  }
+
+  .loungemodul {
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+.farvebillede {
+width: 40px;
+border-radius: 30px;
+
+}
+
+.dropdownknap{
+  justify-content: center;
+  align-items: center;
+}
+
+
+.farvetekst {
+align-items: center;
+margin-left: 10px;
+}
+
+.krydsikon {
+margin-left: 50px;
+width: 20px;
+height: 20px;
+margin-top: 10px;
+
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #105C4C;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+} 
+p.brodtekst{
+  font-size: 16px;
+}
+
+.dropdownknap{
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+}
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .lillepalle{
+      width: 520px;
+      height: auto;
+    }
+  
+    .loungemodul {
+      text-align: center;
+      margin-top: 40px;
+  }
+
+  .dropdownknap{
+    align-self: center;
+  }
+  
+  
+  .farvebillede {
+  width: 40px;
+  border-radius: 30px;
+  }
+
+    
+    .farvetekst {
+    align-items: center;
+    margin-left: 10px;
+    }
+    
+    .krydsikon {
+    margin-left: 50px;
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    
+    }
+
+    /* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.rundtomdethele{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.rundtomteksten{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+
+}
+
+p.brodtekst{
+  font-size: 16px;
+}
+
+a.add-cart.cart1{
+  align-self: center;
+  margin-bottom: 50px;
+}
+
+
+
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {  
+/* Slideshow container */
+.lillepalle{
+  width: 600px;
+  height: auto;
+}
+
+
+a.add-cart.cart1{
+  align-self: center;
+  margin-bottom: 50px;
+}
+
+.rundtomdethele{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.rundtomteksten{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.loungemodul {
+  text-align: center;
+  margin-top: 40px;
+}
+
+
+.farvebillede {
+width: 40px;
+border-radius: 30px;
+}
+
+.farvetekst {
+align-items: center;
+margin-left: 10px;
+}
+
+.krydsikon {
+margin-left: 50px;
+width: 20px;
+height: 20px;
+margin-top: 10px;
+
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #105C4C;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #105C4C;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+}
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .lillepalle{
+      width: 600px;
+      height: auto;
+    }
+
+    a.add-cart.cart1{
+      align-self: flex-start;
+      margin-bottom: 50px;
+    }
+
+    .dropdownknap{
+      justify-content: center;
+      align-self: flex-start;
+    }
+  
+    .loungemodul {
+      text-align: left;
+      margin-top: 40px;
+  }
+  
+
+  
+  .farvebillede {
+  width: 40px;
+  border-radius: 30px;
+  }
+    
+    .farvetekst {
+    align-items: center;
+    margin-left: 10px;
+    }
+    
+    .krydsikon {
+    margin-left: 50px;
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    
+    }
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+p.brodtekst{
+  font-size: 20px;
+}
+
+.rundtomdethele{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.rundtomteksten{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+  }
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+
+    .lillepalle{
+      width: 600px;
+      height: auto;
+    }
+  
+    .loungemodul {
+      text-align: left;
+      margin-top: 40px;
+  }
+
+  
+  .farvebillede {
+  width: 40px;
+  border-radius: 30px;
+  }
+    
+    .farvetekst {
+    align-items: center;
+    margin-left: 10px;
+    }
+    
+    .krydsikon {
+    margin-left: 50px;
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    
+    }
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #105C4C;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #105C4C;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+p.brodtekst{
+  font-size: 20px;
+}
+
+.rundtomdethele{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.rundtomteksten{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+}
+
+.panel{
+  padding: 0 10px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.brodtekst {
+  margin-top: 30px;
+}
+
+.dropdownknap {
+  border-radius: 15px;
+  border: none;
+  padding: 10px;
+  background-color: white;
+  width: 300px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 1px 7px 5px 0px rgba(156,156,156,0.75);
+  -webkit-box-shadow: 1px 7px 5px 0px rgba(156,156,156,0.75);
+  -moz-box-shadow: 1px 7px 5px 0px rgba(156,156,156,0.75);
+  margin-bottom: 20px;
+}
+
+.cart1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #105C4C;
+  color: white;
+  width: 120px;
+  height: 50px;
+  border-radius: 30px;
+  margin-top: 40px;
+}
+
+.kurven{
+  font-size: 16px;
+}
+
+/*produktslider*/
+.produktslider{
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.produkterne{
+  padding: 0 10vw;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.produkterne::-webkit-scrollbar{
+  display: none;
+}
+
+.produktkort{
+  flex: 0 0 auto;
+  width: 250px;
+  height: 600px;
+  margin-right: 40px;
+}
+
+.produktbilleder{
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.billedeafprodukt{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.produktinfo{
+  width: 100%;
+  height: auto;
+  padding-top: 10px;
+
+}
+.tilbagepil,
+.frempil{
+  border: none;
+  width: 10vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 10;   
+}
+
+.pil{
+  width: 10px;
+}
+
+.tilbagepil{
+  left: 0;
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+}
+
+.frempil{
+  right: 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+}
+
+.collection-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.collection {
+  position: relative;
+}
+
+.collection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collection p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+.collection:nth-child(3) {
+  grid-column: span 2;
+  margin-bottom: 10px;
+}
+
+.andrekob{
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+.andrekoben{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+ 

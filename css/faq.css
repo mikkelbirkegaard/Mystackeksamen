@@ -1,0 +1,372 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+
+    :root {
+      /* farver */
+      --lightgreen: #A5BCB1;
+      --darkgreen: #105C4C;
+      --black: #000000;
+      --white: #ffffff;
+
+       /* fonte */
+       --menu: Rift soft, regular;
+    }
+
+      html, body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+      }
+
+
+    h1{
+      font-family: basic-sans, sans-serif;
+      font-weight: 700;
+      font-size: 100px;
+    }
+
+    h2{
+      font-family: basic-sans, sans-serif;
+      font-weight: 700;
+      font-size: 60px;
+      }
+
+   h3{
+      font-family: basic-sans, sans-serif;
+      font-weight: 700;
+      font-size: 30px;
+  }
+
+  h6{
+    font-family: basic-sans, sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  p{
+      font-family: basic-sans, sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+  }
+
+  .hvidfarve{
+    color:white;
+  }
+
+  /* Til FAQ dropdown */
+  .panel {
+    padding: 20px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+
+  .active, .knap:hover {
+    background-color:#A5BCB1;
+  }
+
+
+
+/*Mediarules*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+.faqtekst {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+  .knap {
+    border-radius: 20px;
+    padding: 15px;
+    background-color: #105C4C;
+    width: 300px;
+    margin-top: 20px;
+    display: flex;
+  }
+
+  .alleknapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+  .returnering {
+    font-size: 25px;
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+
+  .ptekst {
+    justify-content: center;
+    padding: 30px;
+  }
+
+
+}
+
+/* Chat */
+/* Knap til at åbne chatten, og holde den fixed */
+.open-button {
+  background-color: #105C4C;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 150px;
+  border-radius: 25px;
+}
+
+/* Popup chatten - skjult default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid white;
+  z-index: 9;
+  border-radius: 30px;
+}
+
+/* Styles til form-containeren */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 25px;
+}
+
+/* Tekstområde*/
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+  font-family: basic-sans, sans-serif;
+  border-radius: 25px;
+}
+
+/* Når tekstområdet aktiveres*/
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Style af send knappen */
+.form-container .btn {
+  background-color: #105C4C;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  font-family: basic-sans, sans-serif;
+  border-radius: 25px;
+}
+
+/* Style af annuller knappen */
+.form-container .cancel {
+  background-color: #A5BCB1;
+  font-family: basic-sans, sans-serif;
+  border-radius: 25px;
+}
+
+/* Hover effekt på alle knapperne*/
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+  .faqtekst {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+    .knap {
+      border-radius: 20px;
+      padding: 15px;
+      background-color: #105C4C;
+      width: 300px;
+      margin-top: 20px;
+      display: flex;
+    }
+
+    .alleknapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .returnering {
+      font-size: 20px;
+      margin-left: 30px;
+      margin-top: 20px;
+    }
+
+    .ptekst {
+      justify-content: center;
+      padding: 30px;
+    }
+
+    .panel {
+      margin-left: 2%;
+      margin-right: 2%;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+  .faqtekst {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+    .knap {
+      border-radius: 20px;
+      padding: 15px;
+      background-color: #105C4C;
+      width: 400px;
+      margin-top: 20px;
+      display: flex;
+    }
+
+    .alleknapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .returnering {
+      font-size: 20px;
+      margin-left: 30px;
+      margin-top: 20px;
+    }
+
+    .ptekst {
+      justify-content: center;
+      padding: 30px;
+    }
+
+    .panel {
+      margin-left: 29%;
+      margin-right: 29%;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+  .faqtekst {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+    .knap {
+      border-radius: 20px;
+      padding: 15px;
+      background-color: #105C4C;
+      width: 600px;
+      margin-top: 20px;
+      display: flex;
+    }
+
+    .alleknapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .returnering {
+      font-size: 20px;
+      margin-left: 30px;
+      margin-top: 20px;
+    }
+
+    .ptekst {
+      justify-content: center;
+      padding: 30px;
+    }
+
+    .panel {
+      margin-left: 22%;
+      margin-right: 22%;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+  .faqtekst {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+    .knap {
+      border-radius: 20px;
+      padding: 15px;
+      background-color: #105C4C;
+      width: 700px;
+      margin-top: 20px;
+      display: flex;
+    }
+
+    .alleknapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .returnering {
+      font-size: 25px;
+      margin-left: 30px;
+      margin-top: 20px;
+    }
+
+    .ptekst {
+      justify-content: center;
+      padding: 30px;
+    }
+
+    .panel {
+      margin-left: 30%;
+      margin-right: 30%;
+    }
+}
+
