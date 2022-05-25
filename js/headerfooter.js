@@ -1,6 +1,7 @@
 
 //Header sektion og menubar
-// kilde: https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci 
+// kilde: Gaurav, (2021), “Let's build a responsive navbar and hamburger menu using HTML, CSS, and Javascript”,https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci, (set online d. 23/05-2022)
+
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 

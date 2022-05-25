@@ -115,7 +115,7 @@
 <div class="overalt">
 <section class="overbillederne">
   <div class="billederne">
-    <img class="bildfix" id="myImg" src="images/forstepalle.png" width="100%" height="auto"> 
+    <img class="bildfix" id="myImg" src="images/hvid.png" width="100%" height="auto"> 
   </div>
 </section>
 
@@ -126,17 +126,78 @@
   </div>
   <div class="rundompris">
   <button class="fortryd" onclick="history.go(-1)">fortryd</button>
-  <p>0 kroner</p>
+  <div id="bestillinger">
+  <div class="tekstialt" id="ialt">
+  </div>
 </div>
+</div>
+
 
   <h4 class="overskrifttilsort">Moduler</h4>
   <p class="underteksterne">Vælg det modul du ønsker at benytte til dit pallemøbel samt antal</p>
 
   <div class="knapperne">
-  <button class="btnknap" onclick="myFunction()"> <img class="palleikon ikon" src="images/palle.jpg" alt="Paller"></button>
+  <button id="test" class="btnknap " onclick="myFunction()"> <img class="palleikon ikon" src="images/palle.jpg" alt="Paller"></button>
   <button class="btnknap"><img class="halvpalleikon ikon" src="images/pallehalv.jpg" alt="Paller"></button>
   <button class="btnknap"><img class="loungemodulikon ikon" src="images/loungemodul.jpg" alt="Paller"></button>
 </div>
+
+<p class="underteksterne afstandtekst">Vælg om du ønsker din palle slebet eller uslebet</p>
+<div class="knapperneslebet">
+  <p class="underteksterne">Slebet</p>
+  <button class="slebetikon"><img class="slebet ikon" src="images/slebet.jpg" alt="Paller"></button>
+  <button class="slebetikon"><div class="streg"></div></button>
+  <p class="underteksterne">Uslebet</p>
+</div>
+
+  <!-- Trigger/Open The Modal -->
+  <div class="rundtomknap">
+  <button id="palleBtn">Læs mere om vores paller</button>
+  </div>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+  
+    <!-- Modal content -->
+    <div class="contentbeskrivelse">
+      <span class="close">&times;</span>
+      <div class="rundtomcontent">
+
+
+      <div class="firstcontent">
+        <div class="contentbilleder">
+          <div class="rundtombillede">
+          <img class="storbillede" src="images/palle.jpg" alt="">
+        </div>
+        </div>
+        <p class="afstandmodul"><strong>Helpalle</strong> <br> <br> Vores helpaller opfylder FAOs internationale standard for træemballage ISPM 15. I.h.t nævnte er nye paller varmebehandlet til 56 graders celsius i træets kerne i mindst 30 minutter..</p>
+      </div>
+
+
+      <div class="firstcontent">
+        <div class="contentbilleder">
+          <div class="rundtombillede">
+          <img class="storbillede" src="images/pallehalv.jpg" alt="">
+        </div>
+        </div>
+        <p class="afstandmodul"><strong>Halvpalle</strong> <br> <br> Vores halvpaller opfylder samme standard som helpallerne. Det er også muligt at vælge om man ønsker pallerne slebet eller uslebet. </p>
+      </div>
+
+
+      <div class="firstcontent">
+        <div class="contentbilleder">
+          <div class="rundtombillede"> 
+          <img class="storbillede" src="images/loungemodul.jpg" alt="">
+        </div>
+        </div>
+        <p class="afstandmodul"><strong>Loungemodul</strong> <br> <br> Vores loungemodul er fremstillet i kraftige FSC certificerede fyrreplanker, samt håndmalet i farven sort (glans 20). Modulet er herudover også slebet.  </p>
+      </div>
+
+
+    </div>
+    </div>
+  
+  </div>
 
 
 
@@ -144,40 +205,148 @@
 <p class="underteksterne">Vælg ryglæn til dit pallemøbel</p>
 
 <div class="knapperne">
-<button class="btnknap" onclick="myPallets()"> <img class="ryglaen ikon" src="images/ryglaenlille.jpg" alt="Paller"></button>
+<button id="ryggen" class="btnknap" onclick="myPallets()"> <img class="ryglaen ikon" src="images/ryglaenlille.jpg" alt="Paller"></button>
 <button class="btnknap"><img class="loungemodulikon ikon" src="images/ryglaenstor.jpg" alt="Paller"></button>
 </div>
+
+<p class="underteksterne afstandtekst">Vælg om du ønsker dit ryglæn i naturtræ eller sort</p>
+<div class="knapperneslebet">
+  <p class="underteksterne">Natur</p>
+  <button class="slebetikon"><img class="slebet ikon" src="images/slebet.jpg" alt="Paller"></button>
+  <button class="slebetikon sortbg"><img class="slebet ikon" src="images/sorttra.jpg" alt="Paller"></button>
+  <p class="underteksterne">Sort</p>
+</div>
+
+ <!-- Trigger/Open The Modal -->
+ <div class="rundtomknap">
+  <button id="rygBtn">Læs mere om vores ryglæn</button>
+  </div>
+
+  <!-- The Modal -->
+  <div id="rygModal" class="modals">
+  
+    <!-- Modal content -->
+    <div class="contentbeskrivelseryg">
+      <span class="closeing">&times;</span>
+      <div class="rundtomcontent">
+
+
+      <div class="firstcontentryglaen">
+          <img class="billederyg" src="images/ryglaenmedmaal.png" alt="">
+        <p class="afstandmodul">Vores ryglæn kommer i to forskellige længder henholdsvis 50cm og 110 cm. <br> <br>
+
+          Ryglænet på 50 cm kan bruges som ryglæn til vores halvpaller, men den kan også sættes på siden af vores helpaller, og dermed fungere som et armlæn. </p>
+      </div>
+    </div>
+    </div>
+  
+  </div>
+
+
 
 
 <h4 class="overskrifttilsort">Madrasser</h4>
 <p class="underteksterne">Vælg den længe madras du ønsker</p>
 
 <div class="knapperne">
-<button class="btnknap">60 CM</button>
-<button class="btnknap" onclick="myMadras()">120 CM</button>
-<button class="btnknap">180 CM</button>
-<button class="btnknap">200 CM</button>
+<button class="btnknapmadras">60 CM</button>
+<button id="madrassengrad" class="btnknapmadras" onclick="myMadras()">120 CM</button>
+<button class="btnknapmadras">180 CM</button>
+<button class="btnknapmadras">200 CM</button>
 </div>
+
+ <!-- Modal madrasserne -->
+ <div class="rundtomknap">
+  <button id="madrasBtn">Læs mere om vores madrasser</button>
+  </div>
+
+  <!-- The Modal -->
+  <div id="madrasModal" class="modalsmadras">
+  
+    <!-- Modal content -->
+    <div class="contentbeskrivelsemadras">
+      <span class="closemadras">&times;</span>
+      <div class="rundtomcontent">
+
+
+      <div class="firstcontentryglaen">
+          <img class="billederyg" src="images/madras.jpg" alt="">
+        <p class="afstandmodul">Vores madrasser kommer i fire forskellige størrelser, og lavet af recycling materiale fremstillet af overskuds skum fra en dansk møbel producent. Madrasserne er 12 cm tykke og de har en mellem hårdhed, som er egnet til både sofa og seng.  </div>
+    </div>
+    </div>
+  
+  </div>
+
 
 
 <h4 class="overskrifttilsort">Madras betræk</h4>
 <p class="underteksterne">Vælg farve til madrassen</p>
 
-<p>Udendørs betræk</p>
+<p class="undedørs">Udendørs betræk</p>
 
 <div class="knapperne">
-<button class="farver" onclick="myBetraek()"> <img class="hynndefarver ikon" src="images/012.jpg" alt="Paller"></button>
-<button class="farver"><img class="hynndefarver ikon" src="images/290.jpg" alt="Paller"></button>
-<button class="farver"><img class="hynndefarver ikon" src="images/291.jpg" alt="Paller"></button>
-<button class="farver"><img class="hynndefarver ikon" src="images/292.jpg" alt="Paller"></button>
+
+<div class="rundtomknappen">
+<button id="hyndebetraek" class="farver" onclick="myBetraek()"> <img class="hynndefarver ikon" src="images/012.jpg" alt="Paller"></button>
+<p class="betraektekst">Charcole <br> Fra 600 kr.</p>
 </div>
 
-<p>Indendørs betræk</p>
+<div class="rundtomknappen">
+<button class="farver"><img class="hynndefarver ikon" src="images/290.jpg" alt="Paller"></button>
+<p class="betraektekst">Granit<br> Fra 495 kr.</p>
+</div>
+
+<div class="rundtomknappen">
+<button class="farver"><img class="hynndefarver ikon" src="images/291.jpg" alt="Paller"></button>
+<p class="betraektekst">Mocca<br> Fra 495 kr.</p>
+</div>
+<div class="rundtomknappen">
+<button class="farver"><img class="hynndefarver ikon" src="images/292.jpg" alt="Paller"></button>
+<p class="betraektekst">Light Grey <br> Fra 495 kr.</p>
+</div>
+
+</div>
+
+<p class="inden">Indendørs betræk</p>
 
 <div class="knapperne">
+
+<div class="rundtomknappen">
 <button class="farver"><img class="hynndefarver ikon" src="images/290.jpg" alt="Paller"></button>
+<p class="betraektekst">Graphite <br> Fra 450 kr.</p>
+</div>
+
+<div class="rundtomknappen">
 <button class="farver"><img class="hynndefarver ikon" src="images/291.jpg" alt="Paller"></button>
+<p class="betraektekst">Dark Grey <br> Fra 450 kr</p>
+</div>
+
+<div class="rundtomknappen">
 <button class="farver"><img class="hynndefarver ikon" src="images/292.jpg" alt="Paller"></button>
+<p class="betraektekst">Pine Green <br> Fra 450 kr</p>
+</div>
+
+<div class="rundtomknappen">
+<button class="farver"><img class="hynndefarver ikon" src="images/290.jpg" alt="Paller"></button>
+<p class="betraektekst">Rust <br> Fra 450 kr</p>
+</div>
+
+<div class="rundtomknappen">
+<button class="farver"><img class="hynndefarver ikon" src="images/291.jpg" alt="Paller"></button>
+<p class="betraektekst">Beige <br> Fra 450 kr</p>
+</div>
+
+<div class="rundtomknappen">
+<button class="farver"><img class="plustegn" src="images/plus.png" alt=""></button>
+</div>
+
+</div>
+
+<div class="rundtomellers">
+<div class="ellerstakknap">
+  <button class="ellersknap"></button>
+  <p>Ellers tak</p>
+  </div>
 </div>
 
 

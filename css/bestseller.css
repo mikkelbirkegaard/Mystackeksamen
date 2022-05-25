@@ -101,7 +101,6 @@
     border: none;
     color: white;
     padding: 15px 150px;
-    margin-left: 120px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -112,9 +111,12 @@
   }
 
 .pallemøbel {
-  margin-left: 530px;
+  align-self: center;
+  justify-content: center;
   margin-top: 40px;
   margin-bottom: 40px;
+  width: 700px;
+  height: auto;
 }
   
 
@@ -210,12 +212,16 @@
         flex-direction: column;
     }
 
-    .knap {
-      margin-left: 15px;
+    .rundtomknap {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .pallemøbel {
-      margin-left: 130px;
+      width: 350px;
       margin-top: 40px;
       margin-bottom: 40px;
     }
@@ -231,12 +237,17 @@
         flex-direction: column;
     }
 
-    .knap {
-        margin-left: 150px;
+    .rundtomknap {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .pallemøbel {
-      margin-left: 200px;
+      width: 500px;
+      height: auto;
       margin-top: 40px;
       margin-bottom: 40px;
     }
@@ -257,12 +268,17 @@
         margin-top: 100px;
     }
 
-    .knap {
-        margin-left: 300px;
+    .rundtomknap {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .pallemøbel {
-      margin-left: 280px;
+      width: 600px;
+      height: auto;
       margin-top: 40px;
       margin-bottom: 40px;
     }
@@ -282,12 +298,15 @@
         margin-top: 100px;
     }
 
-    .knap {
-        margin-left: 400px;
+    .rundtomknap {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .pallemøbel {
-      margin-left: 350px;
       margin-top: 40px;
       margin-bottom: 40px;
     }
@@ -307,13 +326,26 @@
         margin-top: 100px;
     }
 
-    .knap {
-        margin-left: 700px;
+    .rundtomknap {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .pallemøbel {
-      margin-left: 530px;
+      width:800px ;
+      height: auto;
       margin-top: 40px;
       margin-bottom: 40px;
     }
+  }
+
+  .rundtompallen{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }

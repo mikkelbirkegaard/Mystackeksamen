@@ -114,11 +114,31 @@
     -webkit-box-shadow: 1px 3px 7px 0px rgba(174, 174, 174, 0.75);
     -moz-box-shadow: 1px 3px 7px 0px rgba(126, 126, 126, 0.75);
   }
+
+  .btnknapmadras{
+    width: 120px;
+    height: 70px;
+    border: none;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 1px 3px 7px 0px rgba(132, 132, 132, 0.75);
+    -webkit-box-shadow: 1px 3px 7px 0px rgba(174, 174, 174, 0.75);
+    -moz-box-shadow: 1px 3px 7px 0px rgba(126, 126, 126, 0.75);
+  }
+
+  .slebet{
+    width: 50px;
+    height: 50px;
+    border-radius: 90px;
+  }
+
   
   .knapperne{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    width: 400px;
+    align-self: center;
   }
 
   .overskrifttilsort{
@@ -131,7 +151,7 @@
   .underteksterne{
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   .overskriftpris{
@@ -181,6 +201,8 @@
   .farver{
     display: flex;
     justify-content: center;
+    align-self: center;
+    align-items: center;
     width: 50px;
     height: 50px;
     border: none;
@@ -191,5 +213,312 @@
     -moz-box-shadow: 1px 3px 7px 0px rgba(126, 126, 126, 0.75);
   }
 
+  .slebetikon{
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 1px 3px 7px 0px rgba(132, 132, 132, 0.75);
+    -webkit-box-shadow: 1px 3px 7px 0px rgba(174, 174, 174, 0.75);
+    -moz-box-shadow: 1px 3px 7px 0px rgba(126, 126, 126, 0.75);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .streg{
+    width: 2px;
+    background-color: rgba(132, 132, 132, 0.75);;
+    height: 100%;
+    transform: rotate(30deg);
+  }
+
+  #bestillinger{
+    font-family: basic-sans, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  .afstandtekst{
+    margin-top: 100px;
+  }
+
+  .knapperneslebet{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 200px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.contentbeskrivelse {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 800px;
+  height: 500px;
+  border-radius: 25px;
+  border: none;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#palleBtn{
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 50px;
+  background-color: var(--darkgreen);
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 180px;
+}
+
+.rundtomknap{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.rundtomcontent{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.contentbilleder{
+  width: 200px;
+  height: 100px;
+  background-color: #A5BCB1;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.firstcontent{
+  width: 200px;
+  height: 400px;
+}
+
+.firstcontentryglaen{
+  width: 300px;
+  height: 400px;
+}
+.storbillede{
+  width: 150px;
+}
+
+.afstandmodul{
+  margin-top: 20px;
+}
+.sortbg{
+  background-color: #000;
+}
 
 
+/* Ryglæn popup */
+
+.modals {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 200px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.contentbeskrivelseryg {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 800px;
+  height: 500px;
+  border-radius: 25px;
+  border: none;
+}
+
+/* The Close Button ryglæn */
+.closeing {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeing:hover,
+.closeing:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.billederyg{
+  width: 300px;
+}
+
+#rygBtn{
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 50px;
+  background-color: var(--darkgreen);
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 180px;
+}
+
+/* madras popup */
+
+.modalsmadras {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 200px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.contentbeskrivelsemadras {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 800px;
+  height: 500px;
+  border-radius: 25px;
+  border: none;
+}
+
+/* The Close Button madras */
+.closemadras {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closemadras:hover,
+.closemadras:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.billederyg{
+  width: 300px;
+}
+
+#madrasBtn{
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 50px;
+  background-color: var(--darkgreen);
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 180px;
+}
+
+.undedørs{
+  width: 400px;
+  text-align: left;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  align-self: center;
+}
+
+.inden{
+  width: 400px;
+  text-align: left;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  align-self: center;
+}
+
+.rundtomknappen{
+  display: flex;
+  flex-direction: column;
+  width: 90px;
+  font-size: 2px;
+}
+
+.betraektekst{
+  font-size: 12px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.plustegn{
+  width: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.ellersknap{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 1px 3px 7px 0px rgba(132, 132, 132, 0.75);
+  -webkit-box-shadow: 1px 3px 7px 0px rgba(174, 174, 174, 0.75);
+  -moz-box-shadow: 1px 3px 7px 0px rgba(126, 126, 126, 0.75);
+}
+
+.rundtomellers{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.ellerstakknap{
+  display: flex;
+}

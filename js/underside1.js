@@ -1,51 +1,13 @@
-
-// // Billede slides
-let slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-// Dropdown med farver }
-
-var acc = document.getElementsByClassName("dropdownknap");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("activeh");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "none") {
-      panel.style.display = "block";
-    } else {
-      panel.style.display = "none";
-    }
-  });
-}
-
- // Kurv 
+/*Her starter kurven*/ 
+/*Fulgt tutorial - Sampaio, Telmo, (2020), "JavaScript Shopping Cart Tutorial - alle part", https://www.youtube.com/watch?v=B20Getj_Zk4, (set online d. 24/05/2022)
+1/5:https://www.youtube.com/watch?v=B20Getj_Zk4 
+2/5: https://www.youtube.com/watch?v=PoTGs38DR9E 
+3/5: https://www.youtube.com/watch?v=tEAl7L62GEw 
+4/5: https://www.youtube.com/watch?v=QNXQfdgIXLw 
+5/5:https://www.youtube.com/watch?v=IY5UN82FZ2Q 
+*/
+ 
+// Kurv 
 let carts = document.querySelectorAll('.add-cart');
 
 //produkterne
@@ -112,7 +74,14 @@ function setItems(product) {
   cartItems = JSON.parse(cartItems);
 
     if(cartItems != null) {
-      cartItems[product.tag].inCart += 1;  
+
+      if(cartItems[product.tag] == undefined){
+        cartItems = {
+          ...cartItems,
+          [product.tag]: product
+        }
+      }
+        cartItems[product.tag].inCart += 1;  
     } else{
         product.inCart = 1;
         cartItems = {
@@ -129,10 +98,8 @@ function setItems(product) {
 function totalCost(product) {
     //console.log("The products price is" , product.price);
   let cartCost = localStorage.getItem('totalCost');
-
-
-  console.log("My cartCost is", cartCost);
-  console.log(typeof cartCost );
+    console.log("My cartCost is", cartCost);
+    console.log(typeof cartCost );
 
   if(cartCost != null) {
     cartCost = parseInt(cartCost); //konvertering fra string til tal
@@ -150,42 +117,52 @@ function displayCart(){
     cartItems = JSON.parse(cartItems);
     let productContainer = document.querySelector(".products");
     let cartCost = localStorage.getItem('totalCost');
+    let productTotal = document.querySelector(".totalen");
 
     console.log(cartItems);
-    if(cartItems && productContainer) {
+    if(cartItems && productContainer ) {
       productContainer.innerHTML = '';
       Object.values(cartItems).map(item => {
         productContainer.innerHTML += `
+ 
+        <div class="proveting">
         <div class="product">
-        <ion-icon name="close-outline"></ion-icon>
-        <img src="./images/${item.tag}.jpg">
+        <button onclick="this.parentNode.remove();amount-='+ parseInt(price) +';sum.innerHTML=amount">
+        <ion-icon name="close-outline"></ion-icon></button> 
+
+        <img src="./images/${item.tag}.jpg" alt="productimage">
         <span>${item.name}</span>
         </div>
-        <div class="price">${item.price}</div>
+        <div class="price">${item.price} kr.</div>
         <div class="quantity">
-        <ion-icon name="caret-back-circle-outline"></ion-icon>
-          <span>${item.inCart}</span>
-          <ion-icon name="caret-forward-circle-outline"></ion-icon>
+           <ion-icon class="decrease" name="caret-back-circle-outline"></ion-icon>
+              <span>${item.inCart}</span>
+          <ion-icon class="increase" name="caret-forward-circle-outline"></ion-icon>
         </div>
+
         <div class="total"> 
-            DKK${item.inCart * item.price},00
+            ${item.inCart * item.price} kr.
         </div>
+        </div>
+ 
         `
       });
 
-      productContainer.innerHTML += `
+        productTotal.innerHTML += `
         <div class="basketTotalContainer">
-          <h4 class="basketTotalTitle">
-              Kurv Total
-          </h4>  
-          <h4 class="basketTotal">
-              DKK${cartCost},00
-          </h4> 
-        
-      `
+            <h4 class="basketTotalTitle">
+                Kurv Total
+            </h4>  
+            <h4 class="basketTotal">
+              ${cartCost} kr.
+            </h4>   
+        </div>
+      `;
+    
    }
-
 }
+
+
 
 //her kaldes funktion for at huske hvad der er i kurv
 onLoadCartNumbers(); 
@@ -208,3 +185,57 @@ productContainers.forEach((item, i) => {
         item.scrollLeft -= containerWidth;
     })
 })
+
+/*Her slutter kurven*/ 
+
+
+
+
+// w3schools 
+// https://www.w3schools.com/howto/howto_js_slideshow.asp
+// 24/5-2022
+// // Billede slides
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+// Dropdown med farver }
+
+var acc = document.getElementsByClassName("dropdownknap");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("activeh");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "none") {
+      panel.style.display = "block";
+    } else {
+      panel.style.display = "none";
+    }
+  });
+}

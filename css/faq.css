@@ -223,13 +223,14 @@
 
     .returnering {
       font-size: 20px;
-      margin-left: 30px;
-      margin-top: 20px;
+      margin-left: 100px;
+      margin-top: 40px;
     }
 
     .ptekst {
       justify-content: center;
-      padding: 30px;
+      padding-left: 100px;
+      padding-right: 100px;
     }
 
     .panel {
@@ -267,13 +268,14 @@
 
     .returnering {
       font-size: 20px;
-      margin-left: 30px;
-      margin-top: 20px;
+      margin-left: 150px;
+      margin-top: 40px;
     }
 
     .ptekst {
       justify-content: center;
-      padding: 30px;
+      padding-left: 150px;
+      padding-right: 150px;
     }
 
     .panel {
@@ -311,14 +313,16 @@
 
     .returnering {
       font-size: 20px;
-      margin-left: 30px;
-      margin-top: 20px;
+      margin-left: 250px;
+      margin-top: 40px;
     }
 
     .ptekst {
       justify-content: center;
-      padding: 30px;
+      padding-left: 250px;
+      padding-right: 250px;
     }
+    
 
     .panel {
       margin-left: 22%;
@@ -355,18 +359,23 @@
 
     .returnering {
       font-size: 25px;
-      margin-left: 30px;
-      margin-top: 20px;
+      padding-left: 50px;
+      margin-top: 40px;
     }
 
     .ptekst {
       justify-content: center;
-      padding: 30px;
+      padding-left: 300px;
+      padding-right: 300px;
     }
 
     .panel {
       margin-left: 30%;
       margin-right: 30%;
     }
+
+.tekstiknap {
+
+}
 }
 

@@ -117,7 +117,8 @@
 
 <h3 class="tekstoverskrift">Din kurv</h3>
 
-<div class="dethele">
+ <div class="dethele"> <!-- div omkring kurven start -->
+
   <div class="products-container">
       <div class="product-header">
           <h5 class="product-title">Produkter</h5>
@@ -129,14 +130,98 @@
       <div class="products"></div>
   </div>
 
+<div class="klimakompensation">
+  <img class="jordklode" src="images/kunjord.png" alt="jordklode" width="100px" height="100px">
+    <div class="tekstogikonklima">
+      <p> Klimakompensation</p>
+            <!-- I (Popup) ved klimakompensation  Kilde: W3 schools, (n.d), “How to CSS/JS modal”, https://www.w3schools.com/howto/howto_css_modals.asp, (set online d. 25/05-2022) -->
+            <button id="myBtn"><ion-icon name="information-circle-outline"></ion-icon></button>
+
+            <!-- Popup -->
+            <div id="myModal" class="modal">
+
+              <!-- Indhold i popup -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3 class="overskriftklima"> Klimakompensation</h3>
+                <p> Ved os har du mulighed for, at være med til at passe lidt ekstra godt på vores klima. For et valgfrit beløb kan du være med til at plante nye træer i Danmark. <br><br>
+
+                  Beløbet går ubeskåret til Plant et træ, som vi har et samarbejde med. <br>
+                  Plant et træ er en almennyttig organisation som har H.K.H. Kronprinsen som projektor. Organisationen har siden 1998 plantet mere end 1,5 mill. træer i Danmark; enkelttræer, frugtplantager ved børneinstitutioner, undervisningsskove, bytræer, alléer og mindetræer. <br><br>
+                  Du kan læse mere på deres hjemmeside: 
+                  https://plant-et-trae.dk/ </p>
+                  <img src="images/plant.jpg">
+              </div>
+
+</div>
+    </div>
+    <p>Donér fra 50 kr.</p>
+      <div class="donerpenge">
+        <ion-icon class="ikonkurvklima" name="caret-back-circle-outline"></ion-icon>
+        <p>0</p>
+        <ion-icon class="ikonkurvklima" name="caret-forward-circle-outline"></ion-icon>
+      </div>
+      <p>0 kr.</p>
+</div>
+
+
+<div class="fragtogtotal">
+  <div class="totalen"></div>
+    <div class="kurvialtmedfragt">
+      <div class="ikonogfragt">
+        <p class="fontweightekst">Fragt</p>
+        <p class="fontweightekst fragtpris">450 kr.</p>
+      </div>
+      <!-- I (Popup) ved fragt  Kilde: W3 schools, (n.d), “How to CSS/JS modal”, https://www.w3schools.com/howto/howto_css_modals.asp, (set online d. 25/05-2022) -->
+       <button id="myBtn2"><ion-icon name="information-circle-outline"></ion-icon></button>
+
+        <!-- Popup -->
+        <div id="myModal2" class="modal2">
+                      
+        <!-- Indhold i popup -->
+        <div class="modal-content2">
+          <span class="close2">&times;</span>
+          <h3 class="overskriftklima"> Fragt</h3>
+          <p> Vi stræber efter at levere alle ordrer, modtaget på hverdage, så hurtigt som muligt, dvs. inden for ca. 8-14 arbejdsdage. Hvis du indsender en ordre på en lørdag eller en søndag, vil leveringstiden starter på den først kommende hverdag. <br>
+            <br><br>
+            Varerne der leveres med Danske Fragtmænd leveres til kantsten – husk at oplyse dit telefon nr., i tilfælde af at vognmanden har brug for at kontakte dig.
+            <br><br>
+            OBS! Vi leverer kun til fremkommelige adresser, små veje og grusveje i sommerhusområder/kolonihaver kan give problemer.
+            <br><br>
+            Er du ikke hjemme når fragtmanden kommer, står du selv for omkostningerne til en genudlevering. Er du i tvivl om din vej er fremkommelig er du meget velkommen til at kontakte os.
+            <br><br>
+            Ønsker du selv at afhente på vores lager adresse i Randers, er det også mulig. Kontakt os på kontakt@mystack.dk for nærmere aftale.
+            <br><br>
+            Lager adresse, Agerskellet 46 v/rampen, 8920 Randers NV
+            <br><br>
+            Fragt priser – Danske Fragtmænd:
+            <br>
+            – Afhentning på lager = Gratis
+            – Jylland, Fyn, Sjælland, Lolland/Falster = 495 kr.
+            <br><br>
+            Levering med GLS sker til nærmeste GLS-pakkeshop. (Når der leveres med GLS vil man ikke blive ringet op 1 time før levering, men modtager derimod en e-mail vedr. afhentning i nærmeste pakkeshop).
+            <br><br>
+            – Lille GLS forsendelse koster 49,- kr.
+            <br>
+            – Stor GLS forsendelse koster 150,- kr.
+            <br><br>
+            Alle ordre der afsendes fra MyStack sendes via Centrum Bogbinderi A/S  </p>
+        </div>
+          <p class="fontweightekst totaltekstkurv">Total</p>
+    </div>
+</div>
+</div>
+
+
     <br>
     <br>
       <div class="rabatkode"><textarea placeholder="Rabatkode? Skriv den her!" name="msg" required></textarea></div>
       <a class="betalingsknap" href="404.html">Gå til betaling</a>
-</div>
+</div> <!-- div omkring kurve(border) slut -->
 
 
- <!-- Chat -->
+<!-- Chat -->
+<!-- // Kilde for chat: W3 schools, (n.d), “How to create a popup chat window”, https://www.w3schools.com/howto/howto_js_popup_chat.asp, (set online d. 24/05-2022) -->
  <button class="open-button" onclick="openForm()">Brug for hjælp?</button>
 
 <div class="chat-popup" id="myForm">
@@ -174,7 +259,9 @@
         <li class="linkmargin"><a href="faq.html">Fragt</a></li>
         <li class="linkmargin"><a href="faq.html">Handelsbetingelser</a></li>
         <li class="linkmargin"><a href="404.html">Returpant</a></li>
+        <a href="https://dk.trustpilot.com/review/mystack.dk" target="_blank">
         <img class="trustpilotfooter" src="images/trustpilot.jpg" alt="trustpilot">
+        </a>
   
       </div>
       <div class="footerkundeservice">
