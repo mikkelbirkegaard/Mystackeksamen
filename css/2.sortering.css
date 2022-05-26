@@ -55,7 +55,7 @@
     p{
         font-family: basic-sans, sans-serif;
         font-weight: 400;
-        font-size: 20px;
+        font-size: 16px;
   }
 
 
@@ -83,8 +83,6 @@
 }
 
 .recyclebillede{
-width: 500px;
-height: 500px;
 margin-top: 4%;
 }
 
@@ -244,7 +242,7 @@ input {
     
     
     .overskrift {
-        font-size: 80px;
+        font-size: 70px;
     }
   }
   
@@ -256,7 +254,7 @@ input {
     }
     
     .overskrift {
-        font-size: 100px;
+        font-size: 70px;
     }
   }
 

@@ -141,6 +141,14 @@
     align-self: center;
   }
 
+  .knappernehjul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 400px;
+    align-self: center;
+  }
+
   .overskrifttilsort{
     text-align: center;
     margin-top: 20px;
@@ -152,6 +160,11 @@
     text-align: center;
     margin-top: 20px;
     margin-bottom: 30px;
+  }
+
+  .underteksternerygpude{
+    text-align: center;
+    margin-top: 20px;
   }
 
   .overskriftpris{
@@ -173,7 +186,7 @@
   }
 
   .designselv{
-    font-size: 60px;
+    font-size: 40px;
   }
 
   .fortryd{
@@ -517,8 +530,219 @@
   display: flex;
   flex-direction: row;
   width: 100%;
+  justify-content: flex-end;
+  padding-right: 20px;
 }
 
 .ellerstakknap{
   display: flex;
 }
+
+/* betraæk popup */
+
+.modalsbetraek {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 200px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.contentbeskrivelsebetraek {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 800px;
+  height: 500px;
+  border-radius: 25px;
+  border: none;
+}
+
+/* The Close Button betræk */
+.closebetraek {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closebetraek:hover,
+.closebetraek:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#betraekBtn{
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 50px;
+  background-color: var(--darkgreen);
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 180px;
+}
+
+.firstcontentbetraek{
+  display: flex;
+  flex-direction: column;
+  width: 499px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* puder popup */
+
+.modalspude {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 200px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.contentbeskrivelsepude {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 800px;
+  height: 500px;
+  border-radius: 25px;
+  border: none;
+}
+
+/* The Close Button puder */
+.closepude {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closepude:hover,
+.closepude:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#pudeBtn{
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 50px;
+  background-color: var(--darkgreen);
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 180px;
+}
+
+.firstcontentpude{
+  display: flex;
+  flex-direction: column;
+  width: 499px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+}
+
+.opli{
+  color: var(--darkgreen);
+  text-align: center;
+}
+
+/* hjul popup */
+
+.modalshjul {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 200px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.contentbeskrivelsehjul {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 800px;
+  height: 500px;
+  border-radius: 25px;
+  border: none;
+}
+
+/* The Close Button puder */
+.closehjul {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closehjul:hover,
+.closehjul:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#hjulBtn{
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 50px;
+  background-color: var(--darkgreen);
+  color: white;
+  margin-top: 50px;
+}
+
+.firstcontentpude{
+  display: flex;
+  flex-direction: column;
+  width: 499px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnlagikurv{
+  width: 250px;
+  height: 80px;
+  border: none;
+  border-radius: 50px;
+  background-color: var(--darkgreen);
+  color: white;
+  margin-bottom: 180px;
+  font-size: 25px;
+  align-self: center;
+}
+
+.lagikurvtekst{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 5px;
+}
+

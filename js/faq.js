@@ -1,4 +1,5 @@
 
+// Kilde: W3 schools, (n.d), “How to create an Accordion”, https://www.w3schools.com/howto/howto_js_accordion.asp, (set online d. 24/05-2022)
 // FAQ dropdown
 
 var acc = document.getElementsByClassName("knap");

@@ -4,9 +4,9 @@
         <meta charset="utf-8">
         <title> MyStack・Kurv </title>
         <meta name="author" content="Anne-Sofie, Sofie, Mette & Mikkel">
-        <meta name="description" content="På denne side har du mulighed for at købe dit nye pallemøbel. Derudover kan du designe det specielt til din have.">
+        <meta name="description" content="Her kan du afslutte din handel og vælge at støtte med klimakompentation. ">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="sommer, pallemøbler, hynder, kvalitet, bæredygtighed">
+        <meta name="keywords" content="betaling, klimakompentation, handel, produkter">
     
         <!-- Adobe Fonte BASIC SANS & RIFT SOFT -->
         <link rel="stylesheet" href="https://use.typekit.net/ofp0ogv.css">
@@ -27,8 +27,9 @@
  </div>
 
   <!-- Menu mobil -->
-  <header class="header1">
-    <nav class="navbar">
+  <!-- Der er kun en burger på mobilen, da koden drillede var vi nødt til at lave to header til henholdsvis mobil og computer version-->
+  <header id="headerforste" class="header1">
+    <nav id="navbarenmobil" class="navbar">
       <div class="hamburger">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -69,7 +70,7 @@
 
 <!-- Menu computer og liggende ipad -->
 <div class="headercomputer">
-    <div class="navbarcom">
+    <div id="navbarencom" class="navbarcom">
       <div class="startheader">  <!-- div 1 omkring logo og menupunkter-->
         <a href="index.html">
          <img class="nav-logocom" src="images/endeliglogo.png" alt="Mystack logo">
@@ -98,14 +99,13 @@
         <a href="404.html">
           <img class="loopcom" src="images/loop.jpg" alt="loop">
         </a>
-        <a class="cart" href="kurv.html">
-          <img class="kurvcom" src="images/kurv.jpg" alt="kurv"><span>0</span>
-          </a>
+        <a href="kurv.html">
+          <img class="kurvcom" src="images/kurv.jpg" alt="kurv">
+       </a>
         <li class="nav-item">
           <a href="404.html" class="nav-link b2bcom">B2B</a>
         </li>
     </div>
-   
   </div>
 </div>
 
@@ -129,6 +129,9 @@
 
       <div class="products"></div>
   </div>
+
+  
+
 
 <div class="klimakompensation">
   <img class="jordklode" src="images/kunjord.png" alt="jordklode" width="100px" height="100px">

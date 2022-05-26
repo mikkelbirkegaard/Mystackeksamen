@@ -51,7 +51,7 @@ h6{
 p{
     font-family: basic-sans, sans-serif;
     font-weight: regular;
-    font-size: 20px;
+    font-size: 16px;
 }
 
  /*Forside hero billede*/
@@ -148,7 +148,7 @@ p{
 }
 
 .bestsellersbilledeindex{
-  width: 300px;
+  width: 250px;
 }
 
 /*Forside sektion 4 - certifikater*/
@@ -378,6 +378,7 @@ p{
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) {
     
+
     /*Forside sektion 1*/
     .designselvsektion{
       top: 700px;
@@ -417,7 +418,7 @@ p{
     }
 
     .undertekstikon{
-      font-size: 25px;
+      font-size: 16px;
     }
 
   }
@@ -456,11 +457,11 @@ p{
 
 
   .ikontekstindex{
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .undertekstikon{
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .voreshynderflex{
@@ -498,7 +499,7 @@ p{
     }
 
     .teksttilheadpalle{
-      font-size: 20px;
+      font-size: 16px;
     }
 
     .palleindex{

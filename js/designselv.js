@@ -1,4 +1,5 @@
 
+
 // Læs mere om pallerne
 var modal = document.getElementById("myModal");
 
@@ -79,19 +80,123 @@ window.onclick = function(event) {
   }
 }
 
+// Læs mere om madrasserne
+var modalbetraek = document.getElementById("betraekModal");
+
+// Get the button that opens the modal
+var btnbetraek = document.getElementById("betraekBtn");
+
+// Get the <span> element that closes the modal
+var betraekspan = document.getElementsByClassName("closebetraek")[0];
+
+// When the user clicks the button, open the modal 
+btnbetraek.onclick = function() {
+  modalbetraek.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+betraekspan.onclick = function() {
+  modalbetraek.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalbetraek) {
+    modalbetraek.style.display = "none";
+  }
+}
+
+// Læs mere om betræk
+var modalbetraek = document.getElementById("betraekModal");
+
+// Get the button that opens the modal
+var btnbetraek = document.getElementById("betraekBtn");
+
+// Get the <span> element that closes the modal
+var betraekspan = document.getElementsByClassName("closebetraek")[0];
+
+// When the user clicks the button, open the modal 
+btnbetraek.onclick = function() {
+  modalbetraek.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+betraekspan.onclick = function() {
+  modalbetraek.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalbetraek) {
+    modalbetraek.style.display = "none";
+  }
+}
+
+// Læs mere om puderne
+var modalpude = document.getElementById("pudeModal");
+
+// Get the button that opens the modal
+var btnpude = document.getElementById("pudeBtn");
+
+// Get the <span> element that closes the modal
+var pudespan = document.getElementsByClassName("closepude")[0];
+
+// When the user clicks the button, open the modal 
+btnpude.onclick = function() {
+  modalpude.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+pudespan.onclick = function() {
+  modalpude.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalpude) {
+    modalpude.style.display = "none";
+  }
+}
+
+// Læs mere om hjul
+var modalhjul = document.getElementById("hjulModal");
+
+// Get the button that opens the modal
+var btnhjul = document.getElementById("hjulBtn");
+
+// Get the <span> element that closes the modal
+var hjulspan = document.getElementsByClassName("closehjul")[0];
+
+// When the user clicks the button, open the modal 
+btnhjul.onclick = function() {
+  modalhjul.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+hjulspan.onclick = function() {
+  modalhjul.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalhjul) {
+    modalhjul.style.display = "none";
+  }
+}
+
 
 img_array= new Array('images/hvid.png','images/forstepalle.png','images/andenpalle.png','images/tredjepalle.png');
 i=0;
-function myFunction()
+function myForste()
 {
      i++;
     document.getElementById("myImg").src=img_array[i];
     if(i==img_array.length-1) {
    i=-1;
-
     }
     
 }
+
 
 provearray= new Array('images/ryg.png');
 function myPallets()
@@ -111,6 +216,12 @@ betraekarray= new Array('images/sorthynde.png');
 function myBetraek()
 {
     document.getElementById("myImg").src=betraekarray;  
+}
+
+pudearray= new Array('images/donepalle.png');
+function myPude()
+{
+    document.getElementById("myImg").src=pudearray;  
 }
 
 sum = 0  
@@ -133,7 +244,7 @@ sum = 0
   madrassengrad.addEventListener('click',
   function(){
     bestillinger.innerHTML =
-    sum += sum + 1125
+    sum = sum + 1125
     ialt.innerHTML = sum;
   })
 

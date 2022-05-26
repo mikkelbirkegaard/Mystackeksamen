@@ -4,9 +4,9 @@
         <meta charset="utf-8">
         <title> MyStack・Underside </title>
         <meta name="author" content="Anne-Sofie, Sofie, Mette & Mikkel">
-        <meta name="description" content="På denne side har du mulighed for at købe dit nye pallemøbel. Derudover kan du designe det specielt til din have.">
+        <meta name="description" content="På denne side har du mulighed for at købe dit nye pallemøbel. Se også vores populære artikler, som andre kunder er interesseret i.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="sommer, pallemøbler, hynder, kvalitet, bæredygtighed">
+        <meta name="keywords" content="pallemøbler, hynder, kvalitet, artikler, kunder, interesse">
     
         <!-- Adobe Fonte BASIC SANS & RIFT SOFT -->
         <link rel="stylesheet" href="https://use.typekit.net/ofp0ogv.css">
@@ -26,9 +26,10 @@
     <p class="bannertekst">FRI FRAGT på alle ordre over 6000,-</p>
  </div>
        
-         <!-- Menu mobil -->
-<header class="header1">
-    <nav class="navbar">
+  <!-- Menu mobil -->
+  <!-- Der er kun en burger på mobilen, da koden drillede var vi nødt til at lave to header til henholdsvis mobil og computer version-->
+  <header id="headerforste" class="header1">
+    <nav id="navbarenmobil" class="navbar">
       <div class="hamburger">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -67,10 +68,9 @@
     </nav>
 </header>
 
-
 <!-- Menu computer og liggende ipad -->
 <div class="headercomputer">
-    <div class="navbarcom">
+    <div id="navbarencom" class="navbarcom">
       <div class="startheader">  <!-- div 1 omkring logo og menupunkter-->
         <a href="index.html">
          <img class="nav-logocom" src="images/endeliglogo.png" alt="Mystack logo">
@@ -99,14 +99,13 @@
         <a href="404.html">
           <img class="loopcom" src="images/loop.jpg" alt="loop">
         </a>
-        <a class="cart" href="kurv.html">
-       <img class="kurvcom" src="images/kurv.jpg" alt="kurv"><span>0</span>
+        <a href="kurv.html">
+          <img class="kurvcom" src="images/kurv.jpg" alt="kurv">
        </a>
         <li class="nav-item">
           <a href="404.html" class="nav-link b2bcom">B2B</a>
         </li>
     </div>
-   
   </div>
 </div>
 
@@ -452,12 +451,13 @@
 
 
         <!-- Link til JS -->
-        <script src="js/underside1.js"></script>
         <script src="js/headerfooter.js"></script>
+        <script src="js/underside1.js"></script>
         <script src="js/chat.js"></script>
          <!-- Kilde: https://ionic.io/ionicons/usage -->
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> 
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+       
     
 
 </body>
