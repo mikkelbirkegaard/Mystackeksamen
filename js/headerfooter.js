@@ -1,5 +1,4 @@
 
-
 //Header sektion og menubar
 // kilde: Gaurav, (2021), “Let's build a responsive navbar and hamburger menu using HTML, CSS, and Javascript”,https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci, (set online d. 23/05-2022)
 
@@ -22,33 +21,24 @@ function closeMenu() {
     navMenu.classList.remove("active");
 }
 
+window.onscroll = function() {headerFunction()};
+
+var headerfixed = document.getElementById("headerforste");
+var stickyfixed = headerfixed.offsetTop;
+
+function headerFunction() {
+  if (window.pageYOffset > stickyfixed) {
+    headerfixed.classList.add("stickyheaderen");
+  } else {
+    headerfixed.classList.remove("stickyheaderen");
+  }
+}
 
 
-// // //Fixed header on scroll
-// window.onscroll = function() {myFunction()};
 
-// var header = document.getElementById("navbarencom");
-// var sticky = header.offsetTop;
 
-// function myFunction() {
-//   if (window.pageYOffset > sticky) {
-//     header.classList.add("sticky");
-//   } else {
-//     header.classList.remove("sticky");
-//   }
-// }
 
-// // windowen.onscroll = function() {stayMenu()};
 
-// // var headermobil = document.getElementById("navbarenmobil");
-// // var stickymobil = headermobil.offsetTop;
 
-// // function stayMenu() {
-// //   if (windowen.pageYOffset > stickymobil) {
-// //     headermobil.classList.add("stickymobil");
-// //   } else {
-// //     headermobil.classList.remove("stickymobil");
-// //   }
-// // }
 
 

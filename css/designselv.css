@@ -14,12 +14,6 @@
        /* fonte */
        --menu: Rift soft, regular;
     }
-  
-      html, body{
-        width: 100%;
-        height: 100%;
-        margin: 0;
-      }
     
       
       h1{
@@ -480,6 +474,7 @@
   }
 
   .slebetikon{
+    z-index: -3;
     display: flex;
     justify-content: center;
     width: 50px;
@@ -499,6 +494,7 @@
     background-color: rgba(132, 132, 132, 0.75);;
     height: 100%;
     transform: rotate(30deg);
+    z-index: -1;
   }
 
   #bestillinger{

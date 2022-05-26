@@ -16,11 +16,6 @@
      --menu: Rift soft, regular;
   }
 
-    html, body{
-      width: 100%;
-      height: 100%;
-      margin: 0;
-    }
   
     
     h1{
@@ -76,14 +71,19 @@ a {
 .header1{
   border-bottom: 1px solid #E2E8F0;
   background-color: #ffffff;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
-
-
-
 
 .headercomputer{
   border-bottom: 1px solid #E2E8F0;
   background-color: #ffffff;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .navbar {
@@ -469,19 +469,12 @@ li{
       justify-content: space-between;
       background-color: white;
     }
-    /* .sticky {
+    .stickyheaderen {
       position: fixed;
       top: 0;
       width: 100%;
       z-index: 100;
     }
-
-    .stickymobi {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 100;
-    } */
 
     .nav-menucom {
       display: flex;
@@ -631,5 +624,8 @@ li{
    width: 40px;
    margin-left: 10px;
    }
+
+
+
 
  

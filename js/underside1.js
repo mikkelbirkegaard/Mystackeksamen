@@ -42,26 +42,26 @@ for (let i=0; i < carts.length; i++) {
 }
 //For at kurven husker hvad der er lagt i kurv ved reload - Funktion virker kun hvis den kaldes
 function onLoadCartNumbers(){
-  let productNumbers = localStorage.getItem('cartNumbers');
+  let productNumbers = sessionStorage.getItem('cartNumbers');
 
   if(productNumbers) {
     document.querySelector('.cart span').textContent = productNumbers;
   }
 }
 
-// Ved klik på "læg i kurv" knap husker local storage det under "applications" key and value
+// Ved klik på "læg i kurv" knap husker session storage det under "applications" key and value
  function cartNumbers(product) {
   
-   let productNumbers = localStorage.getItem('cartNumbers');
+   let productNumbers = sessionStorage.getItem('cartNumbers');
 
    productNumbers = parseInt(productNumbers);
 
    // Hvis der er produkter i kurven
    if( productNumbers ) {
-    localStorage.setItem('cartNumbers' , productNumbers + 1);
+    sessionStorage.setItem('cartNumbers' , productNumbers + 1);
     document.querySelector('.cart span').textContent = productNumbers + 1;    
    } else {
-    localStorage.setItem('cartNumbers' , 1);
+    sessionStorage.setItem('cartNumbers' , 1);
     document.querySelector('.cart span').textContent = 1; //.cart referer til den class der er ved kurvbilledet i html
    }
 
@@ -70,7 +70,7 @@ function onLoadCartNumbers(){
 }
 
 function setItems(product) {
-  let cartItems = localStorage.getItem('productsInCart');
+  let cartItems = sessionStorage.getItem('productsInCart');
   cartItems = JSON.parse(cartItems);
 
     if(cartItems != null) {
@@ -91,21 +91,21 @@ function setItems(product) {
     }
   
    
-    localStorage.setItem("productsInCart" , JSON.stringify (cartItems));
+    sessionStorage.setItem("productsInCart" , JSON.stringify (cartItems));
 }
 
 // Nedenstående funktion er til for at regne den totale pris ud
 function totalCost(product) {
     //console.log("The products price is" , product.price);
-  let cartCost = localStorage.getItem('totalCost');
+  let cartCost = sessionStorage.getItem('totalCost');
     console.log("My cartCost is", cartCost);
     console.log(typeof cartCost );
 
   if(cartCost != null) {
     cartCost = parseInt(cartCost); //konvertering fra string til tal
-    localStorage.setItem("totalCost", cartCost + product.price);
+    sessionStorage.setItem("totalCost", cartCost + product.price);
   } else {
-    localStorage.setItem("totalCost", product.price);
+    sessionStorage.setItem("totalCost", product.price);
   }
    
 }
@@ -113,10 +113,10 @@ function totalCost(product) {
 
 //produkter i kurven
 function displayCart(){
-    let cartItems = localStorage.getItem("productsInCart")
+    let cartItems = sessionStorage.getItem("productsInCart")
     cartItems = JSON.parse(cartItems);
     let productContainer = document.querySelector(".products");
-    let cartCost = localStorage.getItem('totalCost');
+    let cartCost = sessionStorage.getItem('totalCost');
     let productTotal = document.querySelector(".totalen");
 
     console.log(cartItems);
