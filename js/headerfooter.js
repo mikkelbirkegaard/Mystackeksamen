@@ -24,31 +24,31 @@ function closeMenu() {
 
 
 
-// //Fixed header on scroll
-window.onscroll = function() {myFunction()};
+// // //Fixed header on scroll
+// window.onscroll = function() {myFunction()};
 
-var header = document.getElementById("navbarencom");
-var sticky = header.offsetTop;
+// var header = document.getElementById("navbarencom");
+// var sticky = header.offsetTop;
 
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-
-// windowen.onscroll = function() {stayMenu()};
-
-// var headermobil = document.getElementById("navbarenmobil");
-// var stickymobil = headermobil.offsetTop;
-
-// function stayMenu() {
-//   if (windowen.pageYOffset > stickymobil) {
-//     headermobil.classList.add("stickymobil");
+// function myFunction() {
+//   if (window.pageYOffset > sticky) {
+//     header.classList.add("sticky");
 //   } else {
-//     headermobil.classList.remove("stickymobil");
+//     header.classList.remove("sticky");
 //   }
 // }
+
+// // windowen.onscroll = function() {stayMenu()};
+
+// // var headermobil = document.getElementById("navbarenmobil");
+// // var stickymobil = headermobil.offsetTop;
+
+// // function stayMenu() {
+// //   if (windowen.pageYOffset > stickymobil) {
+// //     headermobil.classList.add("stickymobil");
+// //   } else {
+// //     headermobil.classList.remove("stickymobil");
+// //   }
+// // }
 
 

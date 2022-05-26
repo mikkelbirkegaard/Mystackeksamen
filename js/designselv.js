@@ -227,29 +227,25 @@ function myPude()
 sum = 0  
 
 
-  test.addEventListener('click',
-  function(){
+  test.addEventListener('click',function(){
     bestillinger.innerHTML =
     sum = sum + 420
     ialt.innerHTML = sum;
   })
 
-  ryggen.addEventListener('click',
-  function(){
+  ryggen.addEventListener('click',function(){
     bestillinger.innerHTML =
     sum = sum + 1005
     ialt.innerHTML = sum;
   })
 
-  madrassengrad.addEventListener('click',
-  function(){
+  grad.addEventListener('click',function(){
     bestillinger.innerHTML =
     sum = sum + 1125
     ialt.innerHTML = sum;
   })
 
-  hyndebetraek.addEventListener('click',
-  function(){
+  hyndebetraek.addEventListener('click',function(){
     bestillinger.innerHTML =
     sum = sum + 1665
     ialt.innerHTML = sum;
@@ -259,19 +255,6 @@ sum = 0
       localStorage.setItem("liste", bestillinger.innerHTML)
     
   })
-
-
-  //let gem = sessionStorage.setItem("make", 23)
-
-
-  //local storage gemmer sig selv i browseren. De kan få information fra andre dokumenter ved at bruge localStorage.getItem("navn")
-  //localStorage.setItem("navn", "Sif")
-
-
-  //provekylling.addEventListener('click',
-  //function(){
-    //bestillinger.innerHTML += "<p>kyllingelår</p>"
-  //})
 
 
 

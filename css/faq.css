@@ -55,7 +55,9 @@
 
   .hvidfarve{
     color:white;
+
   }
+
 
   /* Til FAQ dropdown */
   .panel {
@@ -70,6 +72,12 @@
   .active, .knap:hover {
     background-color:#A5BCB1;
   }
+
+  .krydsetiknap {
+    width: 15px;
+    height: 15px;
+  }
+
 
 
 
@@ -91,6 +99,7 @@
     width: 300px;
     margin-top: 20px;
     display: flex;
+  
   }
 
   .alleknapper {

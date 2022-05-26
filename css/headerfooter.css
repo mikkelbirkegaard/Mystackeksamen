@@ -46,6 +46,9 @@
     font-size: 20px;
   }
   
+  ul{
+    padding: 0;
+  }
 
 
 
@@ -466,7 +469,7 @@ li{
       justify-content: space-between;
       background-color: white;
     }
-    .sticky {
+    /* .sticky {
       position: fixed;
       top: 0;
       width: 100%;
@@ -478,7 +481,7 @@ li{
       top: 0;
       width: 100%;
       z-index: 100;
-    }
+    } */
 
     .nav-menucom {
       display: flex;
