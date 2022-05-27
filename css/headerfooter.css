@@ -1,3 +1,4 @@
+@import url("https://use.typekit.net/ofp0ogv.css");
 
 *{
   box-sizing: border-box;
@@ -70,6 +71,8 @@ li {
 
 a {
     text-decoration: none;
+    font-family: basic-sans, sans-serif;
+
 }
 
 .header1{
@@ -119,6 +122,7 @@ a {
 }
 
 .nav-link{
+  font-family: basic-sans, sans-serif;
   font-size: 20px;
   font-family: var(--menu);
   color: var(--black);
@@ -257,16 +261,17 @@ a {
 .footerlinks li a{
   text-decoration: none;
   color: #000000;
+  font-family: basic-sans, sans-serif;
 }
 li{
   list-style: none;
-  font-family: Basic sans;
+  font-family: basic-sans, sans-serif;
   font-size: 16px;
 }
 
  a{
   text-decoration: none;
-  font-family: Basic sans;
+  font-family: basic-sans, sans-serif;
   color: black
 }
 .betalingfooter{
@@ -407,10 +412,11 @@ li{
 .footerlinks li a{
   text-decoration: none;
   color: #000000;
+  font-family: basic-sans, sans-serif;
 }
 li{
   list-style: none;
-  font-family: Basic sans;
+  font-family: basic-sans, sans-serif;
   font-size: 16px;
 }
 
@@ -563,18 +569,19 @@ li{
     }
   
     .footerlinks li a{
+      font-family: basic-sans, sans-serif;
       text-decoration: none;
       color: #000000;
     }
    li{
       list-style: none;
-      font-family: Basic sans;
+      font-family: basic-sans, sans-serif;
       font-size: 16px;
     }
   
     a{
       text-decoration: none;
-      font-family: Basic sans;
+      font-family: basic-sans, sans-serif;
       color: black
     }
     .betalingfooter{
