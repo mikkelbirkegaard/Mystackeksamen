@@ -50,7 +50,11 @@
 /*Banner*/
 
 .bannerdiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--darkgreen);
+  height: 30px;
 }
 
 .bannertekst{
@@ -625,6 +629,16 @@ li{
    margin-left: 10px;
    }
 
+   .cirkelgron{
+     background-color: #105C4C;
+    display: inline-block;
+    width:  20px;
+    height: 20px;
+    border-radius: 20px;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+   }
 
 
 
