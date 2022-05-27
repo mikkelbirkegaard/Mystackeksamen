@@ -17,6 +17,8 @@
       
         <!-- Ikon i faneblad / browser -->
         <link rel="icon" type="image/x-icon" href="images/logoheader.jpg" />
+        <!-- Github, (4/10-2018), https://github.com/michalsnik/aos (Set online d. 25/05-2022)-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     
 <body>
@@ -199,7 +201,7 @@
   </div>
 
 <h3 class="andrekob">Andre købte også</h3>
-  <section class="produktslider">
+  <section data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine" class="produktslider">
     <button class="tilbagepil"> <img class="pil" src="images/hojrepil.png" alt="pil"></button>
     <button class="frempil"> <img class="pil" src="images/venstre.png" alt="pil"></button>
 
@@ -291,7 +293,7 @@
   </section>
 
   <h3 class="andrekoben">Andre så også</h3>
-  <section class="produktslider">
+  <section data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine" class="produktslider">
     <button class="tilbagepil"> <img class="pil" src="images/hojrepil.png" alt="pil"></button>
     <button class="frempil"> <img class="pil" src="images/venstre.png" alt="pil"></button>
 
@@ -473,6 +475,8 @@
 
 
         <!-- Link til JS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>AOS.init();</script>
         <script src="js/headerfooter.js"></script>
         <script src="js/underside1.js"></script>
         <script src="js/chat.js"></script>

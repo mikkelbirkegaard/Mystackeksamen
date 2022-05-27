@@ -1,3 +1,6 @@
+@import url("https://use.typekit.net/ofp0ogv.css");
+
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -75,7 +78,7 @@
 
   .krydsetiknap {
     width: 15px;
-    height: 15px;
+    height: 15p;
   }
 
 
@@ -382,9 +385,4 @@
       margin-left: 30%;
       margin-right: 30%;
     }
-
-.tekstiknap {
-
-}
-}
-
+  }

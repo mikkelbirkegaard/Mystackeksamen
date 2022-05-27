@@ -3,134 +3,84 @@
 // Læs mere om pallerne
 var modal = document.getElementById("myModal");
 
-// Get the button that opens the modal
+// Knappen der åbner "Modal"
 var btn = document.getElementById("palleBtn");
 
-// Get the <span> element that closes the modal
+// X knappen der lukker "modal"
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal 
+// button.onclick funktion der åbner "modal"
 btn.onclick = function() {
   modal.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
+// Når brugeren trykker på X lukker "modal"
 span.onclick = function() {
   modal.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
 
 
 // Læs mere om ryglæn
 var modalryg = document.getElementById("rygModal");
 
-// Get the button that opens the modal
+// Knappen der åbner "Modal"
 var btnen = document.getElementById("rygBtn");
 
-// Get the <span> element that closes the modal
+// X knappen der lukker "modal"
 var rygspan = document.getElementsByClassName("closeing")[0];
 
-// When the user clicks the button, open the modal 
+// button.onclick funktion der åbner "modal"
 btnen.onclick = function() {
   modalryg.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
+// Når brugeren trykker på X lukker "modal"
 rygspan.onclick = function() {
   modalryg.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modalryg) {
-    modalryg.style.display = "none";
-  }
-}
 
 
 // Læs mere om madrasserne
 var modalmadras = document.getElementById("madrasModal");
 
-// Get the button that opens the modal
+// Knappen der åbner "Modal"
 var btnmadras = document.getElementById("madrasBtn");
 
-// Get the <span> element that closes the modal
+// X knappen der lukker "modal"
 var madrasspan = document.getElementsByClassName("closemadras")[0];
 
-// When the user clicks the button, open the modal 
+// button.onclick funktion der åbner "modal"
 btnmadras.onclick = function() {
   modalmadras.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
+// Når brugeren trykker på X lukker "modal"
 madrasspan.onclick = function() {
   modalmadras.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modalmadras) {
-    modalmadras.style.display = "none";
-  }
-}
-
-// Læs mere om madrasserne
-var modalbetraek = document.getElementById("betraekModal");
-
-// Get the button that opens the modal
-var btnbetraek = document.getElementById("betraekBtn");
-
-// Get the <span> element that closes the modal
-var betraekspan = document.getElementsByClassName("closebetraek")[0];
-
-// When the user clicks the button, open the modal 
-btnbetraek.onclick = function() {
-  modalbetraek.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-betraekspan.onclick = function() {
-  modalbetraek.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modalbetraek) {
-    modalbetraek.style.display = "none";
-  }
-}
 
 // Læs mere om betræk
 var modalbetraek = document.getElementById("betraekModal");
 
-// Get the button that opens the modal
+// Knappen der åbner "Modal"
 var btnbetraek = document.getElementById("betraekBtn");
 
-// Get the <span> element that closes the modal
+// X knappen der lukker "modal"
 var betraekspan = document.getElementsByClassName("closebetraek")[0];
 
-// When the user clicks the button, open the modal 
+// button.onclick funktion der åbner "modal"
 btnbetraek.onclick = function() {
   modalbetraek.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
+// Når brugeren trykker på X lukker "modal"
 betraekspan.onclick = function() {
   modalbetraek.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modalbetraek) {
-    modalbetraek.style.display = "none";
-  }
-}
 
 // Læs mere om puderne
 var modalpude = document.getElementById("pudeModal");
@@ -151,12 +101,6 @@ pudespan.onclick = function() {
   modalpude.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modalpude) {
-    modalpude.style.display = "none";
-  }
-}
 
 // Læs mere om hjul
 var modalhjul = document.getElementById("hjulModal");
@@ -177,14 +121,8 @@ hjulspan.onclick = function() {
   modalhjul.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modalhjul) {
-    modalhjul.style.display = "none";
-  }
-}
 
-
+// Valg af moduler er lavet i et array som henviser til en button.onclick
 img_array= new Array('images/hvid.png','images/forstepalle.png','images/andenpalle.png','images/tredjepalle.png');
 i=0;
 function myForste()
@@ -197,7 +135,7 @@ function myForste()
     
 }
 
-
+// array af ryg
 provearray= new Array('images/ryg.png');
 function myPallets()
 {
@@ -205,6 +143,7 @@ function myPallets()
     
 }
 
+// array af madras
 igenarray= new Array('images/grad.png');
 function myMadras()
 {
@@ -212,39 +151,47 @@ function myMadras()
     
 }
 
+// array af betræk
 betraekarray= new Array('images/sorthynde.png');
 function myBetraek()
 {
     document.getElementById("myImg").src=betraekarray;  
 }
 
+// array af rygpuder
 pudearray= new Array('images/donepalle.png');
 function myPude()
 {
     document.getElementById("myImg").src=pudearray;  
 }
 
+//  https://github.com/mikkelbirkegaard/ikonerikurv
+// Her er priserne på de forskellige elementer i design selv
 sum = 0  
 
 
+//Her er der lavet en onclick funktion det tæller op i ialt id 
   test.addEventListener('click',function(){
     bestillinger.innerHTML =
     sum = sum + 420
     ialt.innerHTML = sum;
   })
 
+//Her er der lavet en onclick funktion det tæller op i ialt id 
   ryggen.addEventListener('click',function(){
     bestillinger.innerHTML =
     sum = sum + 1005
     ialt.innerHTML = sum;
   })
 
+//Her er der lavet en onclick funktion det tæller op i ialt id 
   grad.addEventListener('click',function(){
     bestillinger.innerHTML =
     sum = sum + 1125
     ialt.innerHTML = sum;
   })
 
+//Her er der lavet en onclick funktion det tæller op i ialt id 
   hyndebetraek.addEventListener('click',function(){
     bestillinger.innerHTML =
     sum = sum + 1665

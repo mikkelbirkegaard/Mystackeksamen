@@ -1,3 +1,5 @@
+
+@import url("https://use.typekit.net/ofp0ogv.css");
 *{
     box-sizing: border-box;
     margin: 0;
@@ -331,6 +333,7 @@
     border-radius: 40px;
     text-align: center;
     align-items: center;
+    cursor: pointer;
   }
 
   .firstikon{
