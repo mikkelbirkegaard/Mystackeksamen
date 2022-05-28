@@ -125,24 +125,26 @@ function displayCart(){
       Object.values(cartItems).map(item => {
         productContainer.innerHTML += `
  
-        <div class="proveting">
+        <div id="fjernKurven" class="proveting">
         <div class="product">
-        <button onclick="this.parentNode.remove();amount-='+ parseInt(price) +';sum.innerHTML=amount">
+        <button class="sletknappen" onclick="removeNode()">
         <ion-icon name="close-outline"></ion-icon></button> 
 
         <img src="./images/${item.tag}.jpg" alt="productimage">
-        <span>${item.name}</span>
         </div>
+        <span class="produktnavnet">${item.name}</span>
         <div class="price">${item.price} kr.</div>
+        <div class="flexpluspris">
         <div class="quantity">
-           <ion-icon class="decrease" name="caret-back-circle-outline"></ion-icon>
+          <span class="minus">-</span>
               <span>${item.inCart}</span>
-          <ion-icon class="increase" name="caret-forward-circle-outline"></ion-icon>
+          <span class="plus">+</span>
         </div>
 
         <div class="total"> 
             ${item.inCart * item.price} kr.
         </div>
+        </div> 
         </div>
  
         `
@@ -150,17 +152,24 @@ function displayCart(){
 
         productTotal.innerHTML += `
         <div class="basketTotalContainer">
-            <h4 class="basketTotalTitle">
+            <p class="basketTotalTitle">
                 Kurv Total
-            </h4>  
-            <h4 class="basketTotal">
+            </p>  
+            <p class="basketTotal">
               ${cartCost} kr.
-            </h4>   
+            </p>   
         </div>
       `;
     
    }
 }
+
+function removeNode(){
+  const fjernDen = document.getElementById("fjernKurven");
+  const parent = fjernDen.parentNode;
+  parent.removeChild(fjernDen);
+}
+
 
 
 

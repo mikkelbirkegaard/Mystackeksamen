@@ -60,12 +60,6 @@
         font-size: 20px;
   }
 
-
-.dethele {
-  border: 1px solid lightgray;
-  margin: 5%;
-}
-
 .banner {
   background-color: #A5BCB1;
   width: 100%;
@@ -84,9 +78,8 @@
 }
 
 .rabatkode textarea {
-  padding: 15px 15px;
-  margin-right: 300px;
-  margin-bottom: 20px;
+  width: 200px;
+  height: 60px;
   border: none;
   background: #f1f1f1;
   resize: none;
@@ -96,18 +89,19 @@
 }
 
 .betalingsknap {
+  display: flex;
+  width: 200px;
+  height: 60px;
   border: none;
   color: white;
-  padding: 15px 100px;
-  margin-left: 900px;
-  margin-bottom: 20px;
-  text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 16px;
   cursor: pointer;
   border-radius: 25px;
   background-color: var(--darkgreen);
+  justify-content: center;
+  align-items: center;
+
 }
 
 .knapperne {
@@ -117,71 +111,52 @@
  /* Her vises produkterne - kurv siden*/
 
  .products-container{
-    max-width: 650px;
-    justify-content: space-around;
-    margin-left: 300px;
+   width: 100%;
+    justify-content: space-between;
     margin-top: 50px;
  }
 
  .products-container ion-icon{
   font-size: 25px;
   color: var(--darkgreen);
-  margin-left: 10px;
-  margin-right: 10px;
   cursor: pointer;
 }
 
 .krydskurv {
   width: 10px;
  }
-
-
- .product-header{
-  width: 150%;
-  max-width: 1500px;
-  display: flex;
-  justify-content: flex-start;
-  border-bottom: 4px solid lightgrey;
-  margin: 0 auto;
-  font-family: Basic Sans;
-  font-size: 25px;
- }
-
- .product-title{
-   width: 45%;
- }
-
- .price{
-   width: 15%;
-   display: flex;
-   align-items: center;
+ .priceover{
+   width: 150px;
  }
 
  .total {
-   width: 10%;
    display: flex;
    align-items: center;
+   width: 100px;
+ }
+
+ .totalover {
+  display: flex;
+  align-items: center;
+  width: 100px;
+}
+ .ingenpenge{
+  display: flex;
+  align-items: center;
+  width: 100px;
  }
 
  .quantity{
-  width: 30%;
   display: flex;
+  flex-direction: row;
   align-items: center;
-}
-
-.product{
-  width: 45%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 10px 0;
+  justify-content: space-between;
+  width: 100px;
 }
 
 .products{
-  border-bottom: 1px solid lightgrey;
   font-family: Basic Sans;
   font-size: 20px;
-  width: 150%;
 }
 
 .products img {
@@ -190,74 +165,45 @@
 
 .basketTotalContainer{
   display: flex;
-  justify-content: flex-end;
   width: 100%;
-  padding: 10px 0;
+  justify-content: flex-end;
 }
 
-.basketTotalTitle{
-  width: 100px;
-}
-
-.basketTotal{
-  width: 10%;
-}
-
-
- /* Klimakompensation */
-.klimakompensation{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border-bottom: 1px solid lightgrey;
-  width: 975px;
-  margin-left: 300px;
-  margin-top: 15px;
-}
 
 .tekstogikonklima{
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-right: 65px;
 }
 
 .donerpenge{
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-left: 12px;
-  margin-right: 190px;
+  width: 100px;
+  justify-content: space-between;
 }
 
 .klimakompensation ion-icon{
   font-size: 25px;
   color: var(--darkgreen);
-  margin-left: 10px;
-  margin-right: 10px; 
   cursor: pointer;
 }
 
 .jordklode{
   margin-bottom: 15px;
-  margin-right: 50px;
-  width: 100px;
-  height: 100px;
+  width: 85px;
+  height: 85px;
 }
 
 .kurvialtmedfragt{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-left: 900px;
-}
-
-.fontweightekst{
-  font-weight: 600;
 }
 
 
-.kurvialtmedfragt ion-icon{
+
+#myBtn2 ion-icon{
   font-size: 25px;
   color: var(--darkgreen);
   margin-left: 10px;
@@ -268,6 +214,7 @@
 .ikonogfragt{
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
 }
 
 .totaltekstkurv{
@@ -459,22 +406,303 @@ margin-right: 25px;
     .proveting{
       display: flex;
       flex-direction: column;
+      flex-wrap: wrap
     }
+    .product-header{
+      display: none;
+     }
+     .price{
+      display: none;
+   }
+
+   .flexpluspris{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .product{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    width: 100%;
+    padding-right: 70px;
+  }
+
+  .produktnavnet{
+    margin-top: 50px;
+  }
+
+  .inderrundt{
+    padding-right: 50px;
+  }
+
+  .inderrundt{
+    width: 100%;
+    height: auto;
+    padding: 10%;
+  }
+
+  .klimakompensation{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 30px;
+} 
+
+.rundtomjord{
+  display: none;
+}
+
+.rundtomjordtekst{
+  margin-top: 40px;
+}
+
+.rundtomjordtekst{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.rabatogbetal{
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rabatkode {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.tekstbanner{
+  font-size: 20px;
+}
   
   }
   
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (min-width: 600px) {
+    .product-header{
+      display: none;
+     }
+     .price{
+      display: none;
+   }
+
+   .dethele{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-header{
+    display: none;
+   }
+   .price{
+    display: none;
+ }
+
+ .flexpluspris{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+.product{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  width: 100%;
+  padding-right: 70px;
+}
+
+.produktnavnet{
+  margin-top: 50px;
+}
+
+.inderrundt{
+  padding-right: 50px;
+}
+
+.inderrundt{
+  width: 100%;
+  height: auto;
+  padding: 10%;
+}
+
+.proveting{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap
+}
+
+.rundtomjord{
+  display: none;
+}
+
+.rundtomjordtekst{
+  margin-top: 40px;
+}
+
+.klimakompensation{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 30px;
+} 
+
+.rundtomjordtekst{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.rabatogbetal{
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rabatkode {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.tekstbanner{
+  font-size: 30px;
+}
 
   }
   
   /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {  
+  @media only screen and (min-width: 768px) { 
+    .product-header{
+      display: none;
+     }
+     .price{
+       display: none;
+    }
+    .produktnavnet{
+      margin-top: 0px;
+    }
+
+    .dethele {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid lightgray;
+      margin: 20px;
+    }
+  
+    .flexpluspris{
+      display: flex;
+      flex-direction: row;
+      width: 315px;
+      justify-content: space-between;
+    }
+  
+    .product{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      width: 200px;
+    }
+  
+    .inderrundt{
+      width: 100%;
+      height: auto;
+      padding: 2%;
+    }
+    .proveting{
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+    }
+
+    .rundtomjord{
+      width: 60px;
+      display: block;
+    }
+
+    .rundtomjordtekst{
+      margin-top: 0px;
+    }
+
+    .rundtomjordtekst{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 500px;
+    }
+
+     /* Klimakompensation */
+    .klimakompensation{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+     width: 100%;
+     margin-top: 15px;
+    } 
+
+    .rabatogbetal{
+      margin-top: 50px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
 
   }
   
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
+    .product-header{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      font-family: Basic Sans;
+      font-size: 20px;
+      font-weight: 200;
+      margin-bottom: 20px;
+     }
+
+     .price{
+      display: flex;
+      align-items: center;
+      width: 150px;
+    }
+    .product{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      width: 200px;
+    }
+
+    .dethele {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid lightgray;
+      margin: 100px;
+    }
+
 
   }
   
@@ -483,6 +711,121 @@ margin-right: 25px;
 
   }
 
-  .proveting{
+  .fragtogtotal{
+    margin-top: 30px;
+    height: 100px;
+    width: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
+
+  .rundtomprodukter{
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    justify-content: flex-end;
+  }
+
+  #myBtn{
+    border: none;
+    background-color: white;
+  }
+
+  #myBtn2{
+    border: none;
+    background-color: white;
+  }
+
+  .sletknappen{
+    border: none;
+    background-color: white;
+  }
+
+  .freefragt{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .doner{
+    width: 150px;
+  }
+
+  .rundtombilledejord{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .produktnavnet{
+    display: flex;
+    align-items: center;
+    width: 250px;
+  }
+
+  .billedeholderprodukter{
+    width: 200px;
+  }
+
+  .product-title{
+    width: 250px;
+  }
+
+  .quantityover{
+    width: 100px;
+  }
+
+  .linjeunder{
+    width: 100%;
+    align-self: center;
+  }
+
+  .overlinje{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grontekst{
+    color: var(--darkgreen);
+    font-size: 16px;
+  }
+
+  .basketTotalTitle{
+    margin-right: 30px;
+  }
+
+  .afstandfragt{
+    margin-right: 38px;
+  }
+
+  .minus{
+    display: flex;
+    justify-content: center;
+    width: 20px;
+    font-family: basic-sans, sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    cursor: pointer;
+  }
+
+  .plus{
+    display: flex;
+    justify-content: center;
+    width: 20px;
+    font-family: basic-sans, sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+    padding-bottom: 5px;
+    cursor: pointer;
+  }
+
+  .overingenplus{
+    display: flex;
+    flex-direction: row;
+    width: 315px;
+    justify-content: space-between;
+  }
+
