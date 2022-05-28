@@ -46,6 +46,11 @@
     padding: 0;
   }
 
+  button{
+    font-family: basic-sans, sans-serif;
+    color: black;
+  }
+
 
 
 /*Banner*/
@@ -122,9 +127,8 @@ a {
 }
 
 .nav-link{
-  font-family: basic-sans, sans-serif;
   font-size: 20px;
-  font-family: var(--menu);
+  font-family: rift-soft, sans-serif;
   color: var(--black);
 }
 
@@ -496,7 +500,7 @@ li{
 
     .nav-linkcom{
       font-size: 20px;
-      font-family: var(--menu);
+      font-family: rift-soft, sans-serif;
       color: var(--black);
     }
 

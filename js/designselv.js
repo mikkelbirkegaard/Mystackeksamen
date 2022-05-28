@@ -123,7 +123,7 @@ hjulspan.onclick = function() {
 
 
 // Valg af moduler er lavet i et array som henviser til en button.onclick
-img_array= new Array('images/hvid.png','images/forstepalle.png','images/andenpalle.png','images/tredjepalle.png');
+img_array= new Array('images/hvid.jpg','images/forstepalle.jpg','images/andenpalle.jpg','images/tredjepalle.jpg');
 i=0;
 function myForste()
 {
@@ -136,7 +136,7 @@ function myForste()
 }
 
 // array af ryg
-provearray= new Array('images/ryg.png');
+provearray= new Array('images/ryg.jpg');
 function myPallets()
 {
     document.getElementById("myImg").src=provearray;
@@ -144,7 +144,7 @@ function myPallets()
 }
 
 // array af madras
-igenarray= new Array('images/grad.png');
+igenarray= new Array('images/grad.jpg');
 function myMadras()
 {
     document.getElementById("myImg").src=igenarray;
@@ -152,14 +152,14 @@ function myMadras()
 }
 
 // array af betræk
-betraekarray= new Array('images/sorthynde.png');
+betraekarray= new Array('images/sorthynde.jpg');
 function myBetraek()
 {
     document.getElementById("myImg").src=betraekarray;  
 }
 
 // array af rygpuder
-pudearray= new Array('images/donepalle.png');
+pudearray= new Array('images/donepalle.jpg');
 function myPude()
 {
     document.getElementById("myImg").src=pudearray;  
