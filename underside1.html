@@ -202,7 +202,7 @@
   </div>
 
 <h3 class="andrekob">Andre købte også</h3>
-  <section data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine" class="produktslider">
+  <div data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine" class="produktslider">
     <button class="tilbagepil"> <img class="pil" src="images/hojrepil.png" alt="pil"></button>
     <button class="frempil"> <img class="pil" src="images/venstre.png" alt="pil"></button>
 
@@ -291,10 +291,10 @@
         </div> 
       </div>
     </div>
-  </section>
+  </div>
 
   <h3 class="andrekoben">Andre så også</h3>
-  <section data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine" class="produktslider">
+  <div data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine" class="produktslider">
     <button class="tilbagepil"> <img class="pil" src="images/hojrepil.png" alt="pil"></button>
     <button class="frempil"> <img class="pil" src="images/venstre.png" alt="pil"></button>
 
@@ -377,7 +377,7 @@
         </div> 
       </div>
     </div>
-  </section>
+  </div>
             
 
 
@@ -389,7 +389,10 @@
   <form action="/action2.html" class="form-container">
     <h6>Chat med os!</h6>
 
-    <label for="msg"><b>Svartid i øjeblikket: 5 minutter</b></label>
+    <label for="msg">
+      <input class="skjulinput" id="msg" type="text">
+      Svartid i øjeblikket: 5 minutter
+    </label>
     <textarea placeholder="Tryk for at skrive her..." name="msg" required></textarea>
 
     <button type="submit" class="btn">Send</button>
