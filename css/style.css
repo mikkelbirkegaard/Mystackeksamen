@@ -1,4 +1,4 @@
-@import url("https://use.typekit.net/ofp0ogv.css");
+@import url("https://use.typekit.net/nxl2ord.css");
 
 
 *{
@@ -50,10 +50,6 @@ p{
     font-size: 16px;
 }
 
- /*Forside hero billede*/
- .baggrundsbilledeindex{
-  position: relative;
-}
 
 
 
@@ -282,6 +278,15 @@ p{
       margin-top: 20px;
     }
 
+     /*Forside hero billede mobil*/
+   .baggrundsbilledeindexmobil{
+     position: relative;
+    }
+     /*Forside hero billede*/
+ .baggrundsbilledeindex{
+  display: none;
+}
+
 /*Forside sektion 2 - ikoner/vores hynder*/
 
     .yderdivvoreshynder{
@@ -325,6 +330,10 @@ p{
       width: 500px;
       height: 370px;
     }
+         /*Forside hero billede*/
+ .baggrundsbilledeindex{
+  display: none;
+}
 
     .headpalle{
       font-size: 25px;
@@ -368,6 +377,11 @@ p{
       margin-top: 20px;
     }
 
+         /*Forside hero billede mobil*/
+   .baggrundsbilledeindexmobil{
+    position: relative;
+   }
+
 
   }
   
@@ -399,6 +413,17 @@ p{
       font-size: 16px;
       margin-top: 15px;
     }
+
+    .baggrundsbilledeindexmobil{
+      display: none;
+     }
+
+
+ /*Forside hero billede*/
+ .baggrundsbilledeindex{
+  position: relative;
+  display: block;
+}
 
 /*Forside sektion 2 - ikoner/vores hynder*/
     .yderdivvoreshynder{
