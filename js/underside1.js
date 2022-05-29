@@ -164,6 +164,9 @@ function displayCart(){
    }
 }
 
+/*Funktion der fjerner ting i kurven*/ 
+/*Read Write Exercise, (2019), "How to remove an HTML element using JavaScript", https://www.youtube.com/watch?v=ewRx5WsLIv0, (set online d. 28/05/2022)
+*/
 function removeNode(){
   const fjernDen = document.getElementById("fjernKurven");
   const parent = fjernDen.parentNode;
